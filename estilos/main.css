@@ -1,0 +1,143 @@
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+/*selector de etiqueta*/
+body{
+    /*font-family -> para dar el estilo de letra*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+    background-color: #EED7CE;
+    position: relative;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6{
+    /*margen debajo*/
+    margin-bottom: 10px;
+    /*
+    primer valor -> selecciona todas las propiedades css a cambiar
+    segundo valor -> intervalo de tiempo que dura el cambio de valor de propiedad
+    tercer valor -> funcion de velocidad a la cual va a cambiar el valor de la propiedad
+    */
+    transition: all .3s ease-in-out;
+}
+
+/* "." selector de clase*/
+/* :hover pseudo clase*/
+.headings:hover{
+    /*mover elemento 3px hacia arriba*/
+    transform: translateY(-3px);
+}
+
+.main-header{
+    background-color: #EAEAEA;
+}
+
+.main-title{
+    margin-left: 15px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: brown;
+}
+
+/* "#" selector de id*/
+#main-nav{
+    position: relative;
+    bottom: 40px;
+    left: 80%;
+}
+
+/*selector descendente*/
+#main-nav ul li{
+    /*para quitar los puntos de la lista*/
+    list-style: none;
+    display: inline;
+}
+
+#main-nav ul li a{
+    text-decoration: none;
+    color: #FF87CA;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    margin-left: 10px;
+}
+
+#main-nav ul li a:hover{
+    color: rgb(0, 207, 207);
+}
+
+
+
+.main-sections{
+    margin-bottom: 10px;
+    padding: 70px;
+    width: 100%;
+
+    text-align: center;
+}
+
+.section-1{
+    background-color: #FFC4E1;
+}
+
+.section-3{
+    background-color: #FFC4E1;
+}
+
+.main-texts{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.main-texts strong{
+    color: tomato;
+}
+
+hr{
+    width: 40%;
+    position: relative;
+    left: 30%;
+    margin-bottom: 10px;
+    color: #FF87CA;
+}
+
+.main-button{
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid rgb(192, 145, 153);
+    border-radius: 5px;
+    background-color: #FF87CA;
+
+    font-weight: 800;
+    font-size: 20px;
+
+    transition: all .5s ease-in-out;
+}
+
+.main-button:hover{
+    background-color: #df75af;
+    border: 1px solid red;
+    transform: translateY(-5px);
+}
+
+footer{
+    background-color: rgb(187, 93, 59);
+    text-align: center;
+    /*position: fixed;
+    width: 100%;
+    bottom: 0;*/
+    overflow: hidden;
+}
